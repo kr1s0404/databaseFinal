@@ -27,23 +27,28 @@ struct SearchBar: View {
                 }
             
             if isEditing {
-                Button(action: {
-                    withAnimation(.default) {
-                        self.isEditing = false
-                        self.searchText = ""
-                        dismissKeyboard()
-                    }
-                }) {
-                    Text("取消")
-                }
-                .padding(.trailing, 10)
-                .transition(.move(edge: .trailing))
+                cancelButton
             }
         }
     }
     
+    var cancelButton: some View {
+        Button(action: {
+            withAnimation(.default) {
+                dismissKeyboard()
+            }
+        }) {
+            Text("取消")
+        }
+        .padding(.trailing, 10)
+        .transition(.move(edge: .trailing))
+    }
+    
+    
     func dismissKeyboard()
     {
+        self.isEditing = false
+        self.searchText = ""
         UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }

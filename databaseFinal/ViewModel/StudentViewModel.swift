@@ -8,7 +8,7 @@
 import SwiftUI
 import CodableCSV
 
-class StudentViewModel: ObservableObject
+final class StudentViewModel: ObservableObject
 {
     @Published var studentData = [StudentModel]()
     @Published var searchResult: [StudentModel] = []

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct RowView: View
+struct studentRowView: View
 {
     let student: StudentModel
     

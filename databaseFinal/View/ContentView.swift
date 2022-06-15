@@ -9,30 +9,34 @@ import SwiftUI
 
 struct ContentView: View
 {
-    @StateObject var vm = StudentViewModel(from: "DB_students_tc_utf8")
+    @StateObject var viewModel = StudentViewModel(from: "DB_students_tc_utf8")
     
     var body: some View
     {
         ScrollView
         {
-            SearchModeView(selectedIndex: $vm.selectedIndex)
+            SearchModeView(selectedIndex: $viewModel.selectedIndex)
             
-            SearchBar(searchText: $vm.searchText)
+            SearchBar(searchText: $viewModel.searchText)
                 .padding()
                 .onSubmit {
-                    vm.filterResult()
+                    viewModel.filterResult()
                 }
             
             
             LazyVStack(alignment: .leading, spacing: 5)
             {
-                ForEach(vm.searchText.isEmpty ? vm.studentData : vm.searchResult) { student in
-                    RowView(student: student)
+                ForEach(searchResult()) { student in
+                    studentRowView(student: student)
                 }
                 .padding(.horizontal, 20)
                 .padding(.vertical, 5)
             }
         }
+    }
+    
+    func searchResult() -> [StudentModel] {
+        return viewModel.searchText.isEmpty ? viewModel.studentData : viewModel.searchResult
     }
 }
 

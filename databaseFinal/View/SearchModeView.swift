@@ -11,7 +11,7 @@ struct SearchModeView: View
 {
     @Binding var selectedIndex: Int
     
-    let searchMode = ["studentID", "courseID", "courseName"]
+    let searchMode = ["以學號搜尋", "以選課代碼搜尋", "以課程名稱搜尋"]
     
     var body: some View
     {
