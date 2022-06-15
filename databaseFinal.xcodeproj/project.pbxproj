@@ -7,26 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F1BFB522858B52B00338284 /* CodableCSV in Frameworks */ = {isa = PBXBuildFile; productRef = 2F1BFB512858B52B00338284 /* CodableCSV */; };
+		2F6E742D285A907C002E2AA2 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E742C285A907C002E2AA2 /* RowView.swift */; };
+		2F6E7434285A963A002E2AA2 /* SearchModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6E7433285A963A002E2AA2 /* SearchModeView.swift */; };
 		2FD80D6F2854C2710023DB5F /* databaseFinalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD80D6E2854C2710023DB5F /* databaseFinalApp.swift */; };
 		2FD80D712854C2710023DB5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD80D702854C2710023DB5F /* ContentView.swift */; };
 		2FD80D732854C2720023DB5F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD80D722854C2720023DB5F /* Assets.xcassets */; };
 		2FD80D762854C2720023DB5F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FD80D752854C2720023DB5F /* Preview Assets.xcassets */; };
 		2FD80D7D2854C30A0023DB5F /* DB_students_tc_utf8.csv in Resources */ = {isa = PBXBuildFile; fileRef = 2FD80D7C2854C30A0023DB5F /* DB_students_tc_utf8.csv */; };
-		2FD80D7F2854C34E0023DB5F /* model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD80D7E2854C34E0023DB5F /* model.swift */; };
-		2FD80D812854D5010023DB5F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD80D802854D5010023DB5F /* ViewModel.swift */; };
-		2FD80D832854DA2C0023DB5F /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD80D822854DA2C0023DB5F /* SearchBar.swift */; };
+		2FD80D7F2854C34E0023DB5F /* StudentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD80D7E2854C34E0023DB5F /* StudentModel.swift */; };
+		2FD80D812854D5010023DB5F /* StudentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD80D802854D5010023DB5F /* StudentViewModel.swift */; };
+		2FD80D832854DA2C0023DB5F /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD80D822854DA2C0023DB5F /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F6E742C285A907C002E2AA2 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		2F6E7433285A963A002E2AA2 /* SearchModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchModeView.swift; sourceTree = "<group>"; };
 		2FD80D6B2854C2710023DB5F /* databaseFinal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = databaseFinal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FD80D6E2854C2710023DB5F /* databaseFinalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = databaseFinalApp.swift; sourceTree = "<group>"; };
 		2FD80D702854C2710023DB5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2FD80D722854C2720023DB5F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FD80D752854C2720023DB5F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2FD80D7C2854C30A0023DB5F /* DB_students_tc_utf8.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DB_students_tc_utf8.csv; sourceTree = "<group>"; };
-		2FD80D7E2854C34E0023DB5F /* model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = model.swift; sourceTree = "<group>"; };
-		2FD80D802854D5010023DB5F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		2FD80D822854DA2C0023DB5F /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		2FD80D7E2854C34E0023DB5F /* StudentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentModel.swift; sourceTree = "<group>"; };
+		2FD80D802854D5010023DB5F /* StudentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StudentViewModel.swift; sourceTree = "<group>"; };
+		2FD80D822854DA2C0023DB5F /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,12 +39,47 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F1BFB522858B52B00338284 /* CodableCSV in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2F6E742F285A90D1002E2AA2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		2F6E7430285A90D3002E2AA2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2FD80D7E2854C34E0023DB5F /* StudentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2F6E7431285A90D6002E2AA2 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2FD80D802854D5010023DB5F /* StudentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2F6E7432285A90DA002E2AA2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2F6E742C285A907C002E2AA2 /* RowView.swift */,
+				2FD80D822854DA2C0023DB5F /* SearchBarView.swift */,
+				2F6E7433285A963A002E2AA2 /* SearchModeView.swift */,
+				2FD80D702854C2710023DB5F /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		2FD80D622854C2710023DB5F = {
 			isa = PBXGroup;
 			children = (
@@ -61,10 +101,10 @@
 			children = (
 				2FD80D7C2854C30A0023DB5F /* DB_students_tc_utf8.csv */,
 				2FD80D6E2854C2710023DB5F /* databaseFinalApp.swift */,
-				2FD80D822854DA2C0023DB5F /* SearchBar.swift */,
-				2FD80D702854C2710023DB5F /* ContentView.swift */,
-				2FD80D802854D5010023DB5F /* ViewModel.swift */,
-				2FD80D7E2854C34E0023DB5F /* model.swift */,
+				2F6E7430285A90D3002E2AA2 /* Model */,
+				2F6E7432285A90DA002E2AA2 /* View */,
+				2F6E7431285A90D6002E2AA2 /* ViewModel */,
+				2F6E742F285A90D1002E2AA2 /* New Group */,
 				2FD80D722854C2720023DB5F /* Assets.xcassets */,
 				2FD80D742854C2720023DB5F /* Preview Content */,
 			);
@@ -95,6 +135,9 @@
 			dependencies = (
 			);
 			name = databaseFinal;
+			packageProductDependencies = (
+				2F1BFB512858B52B00338284 /* CodableCSV */,
+			);
 			productName = databaseFinal;
 			productReference = 2FD80D6B2854C2710023DB5F /* databaseFinal.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +166,9 @@
 				Base,
 			);
 			mainGroup = 2FD80D622854C2710023DB5F;
+			packageReferences = (
+				2F1BFB502858B52B00338284 /* XCRemoteSwiftPackageReference "CodableCSV" */,
+			);
 			productRefGroup = 2FD80D6C2854C2710023DB5F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -151,9 +197,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FD80D712854C2710023DB5F /* ContentView.swift in Sources */,
-				2FD80D7F2854C34E0023DB5F /* model.swift in Sources */,
-				2FD80D832854DA2C0023DB5F /* SearchBar.swift in Sources */,
-				2FD80D812854D5010023DB5F /* ViewModel.swift in Sources */,
+				2F6E742D285A907C002E2AA2 /* RowView.swift in Sources */,
+				2FD80D7F2854C34E0023DB5F /* StudentModel.swift in Sources */,
+				2FD80D832854DA2C0023DB5F /* SearchBarView.swift in Sources */,
+				2F6E7434285A963A002E2AA2 /* SearchModeView.swift in Sources */,
+				2FD80D812854D5010023DB5F /* StudentViewModel.swift in Sources */,
 				2FD80D6F2854C2710023DB5F /* databaseFinalApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -357,6 +405,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2F1BFB502858B52B00338284 /* XCRemoteSwiftPackageReference "CodableCSV" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/dehesa/CodableCSV";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2F1BFB512858B52B00338284 /* CodableCSV */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2F1BFB502858B52B00338284 /* XCRemoteSwiftPackageReference "CodableCSV" */;
+			productName = CodableCSV;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2FD80D632854C2710023DB5F /* Project object */;
 }

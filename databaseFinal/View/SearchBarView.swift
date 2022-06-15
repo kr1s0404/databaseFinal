@@ -9,13 +9,14 @@ import SwiftUI
 
 struct SearchBar: View {
     
-    @Binding var text: String
+    @Binding var searchText: String
     @State private var isEditing = false
     
-    var body: some View {
-        HStack {
-            
-            TextField("搜尋 ...", text: $text)
+    var body: some View
+    {
+        HStack
+        {
+            TextField("搜尋 ...", text: $searchText)
                 .padding(7)
                 .padding(.horizontal, 25)
                 .background(Color(.systemGray6))
@@ -29,8 +30,8 @@ struct SearchBar: View {
                 Button(action: {
                     withAnimation(.default) {
                         self.isEditing = false
-                        self.text = ""
-                        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+                        self.searchText = ""
+                        dismissKeyboard()
                     }
                 }) {
                     Text("取消")
@@ -39,5 +40,10 @@ struct SearchBar: View {
                 .transition(.move(edge: .trailing))
             }
         }
+    }
+    
+    func dismissKeyboard()
+    {
+        UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
     }
 }

@@ -8,9 +8,12 @@
 import SwiftUI
 
 @main
-struct databaseFinalApp: App {
-    var body: some Scene {
-        WindowGroup {
+struct databaseFinalApp: App
+{
+    var body: some Scene
+    {
+        WindowGroup
+        {
             ContentView()
         }
     }
